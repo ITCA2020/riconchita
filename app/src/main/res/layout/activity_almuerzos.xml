@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="APERITIVOS"
+            android:text="ALMUERZOS"
             android:layout_centerVertical="true"
             android:textStyle="bold"
             android:padding="10dp"
@@ -60,24 +60,24 @@
                         android:padding="5pt">
 
                         <ImageView
-                            android:id="@+id/imgaperitivo1"
+                            android:id="@+id/imgalmuerzo1"
                             android:layout_width="match_parent"
                             android:layout_height="125dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/aperitivo" />
+                            android:src="@drawable/almuerzo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
-                            android:layout_below="@id/imgaperitivo1"
+                            android:layout_below="@id/imgalmuerzo1"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
 
                             <TextView
-                                android:id="@+id/tituloAperitivo1"
+                                android:id="@+id/almuerzoTitulo1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="TITULO 1"
@@ -85,13 +85,13 @@
                                 android:textStyle="bold"/>
 
                             <TextView
-                                android:id="@+id/aperitivoDesc1"
+                                android:id="@+id/almuerzoDesc1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="3pt"
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
-                                android:layout_below="@+id/tituloAperitivo1"
+                                android:layout_below="@+id/almuerzoTitulo1"
                                 android:text="Lorem Ipsum is simply dummy text of industry." />
 
                             <View
@@ -101,7 +101,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:layout_marginTop="5dp"
                                 android:background="@color/colorCafePrincipal"
-                                android:layout_below="@+id/aperitivoDesc1"
+                                android:layout_below="@+id/almuerzoDesc1"
                                 />
 
                             <TextView
@@ -116,7 +116,7 @@
                                 />
 
                             <EditText
-                                android:id="@+id/aperitivoCantidad1"
+                                android:id="@+id/almuerzoCant1"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
@@ -129,7 +129,7 @@
                                 />
 
                             <TextView
-                                android:id="@+id/aperitivoPrecio1"
+                                android:id="@+id/almuerzoPrecio1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="$2.00"
@@ -153,8 +153,8 @@
                                 android:layout_alignParentRight="true"/>
                         </RelativeLayout>
                     </RelativeLayout>
-
                 </androidx.cardview.widget.CardView>
+
             </GridLayout>
         </LinearLayout>
     </ScrollView>
