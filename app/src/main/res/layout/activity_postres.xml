@@ -13,7 +13,7 @@
         android:id="@+id/logoMenu"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="@drawable/bg_menu">
+        android:background="@drawable/img_sorbetemalteada">
 
         <TextView
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/postre" />
+                            android:src="@drawable/img_chocolatepalillos" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                                 android:id="@+id/tituloPostres1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="TITULO 1"
+                                android:text="Palillos de chocolate con postre"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -92,7 +92,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/tituloPostres1"
-                                android:text="Lorem Ipsum is simply dummy text of industry." />
+                                android:text="Palillos de chocolate con pastelito de chocolate." />
 
                             <View
                                 android:id="@+id/separador1"
@@ -132,7 +132,7 @@
                                 android:id="@+id/postresPrecio1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$2.00"
+                                android:text="$1.50"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
@@ -155,6 +155,459 @@
                     </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorGris"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5pt">
+
+                        <ImageView
+                            android:id="@+id/imgPostres2"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/img_pastelcanela" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/imgPostres2"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5pt">
+
+                            <TextView
+                                android:id="@+id/tituloPostres2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pastel de leche con canela"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/postresDesc2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3pt"
+                                android:textSize="11sp"
+                                android:paddingBottom="5pt"
+                                android:layout_below="@+id/tituloPostres2"
+                                android:text="Pastel de leche con canela." />
+
+                            <View
+                                android:id="@+id/separador2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorCafePrincipal"
+                                android:layout_below="@+id/postresDesc2"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelCantidad2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cantidad:"
+                                android:textSize="15sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/separador2"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                            <EditText
+                                android:id="@+id/postresCant2"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textAlignment="textEnd"
+                                android:textSize="15sp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_below="@id/separador2"
+                                android:layout_toRightOf="@id/labelCantidad2"
+                                />
+
+                            <TextView
+                                android:id="@+id/postresPrecio2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$2.50"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador2"
+                                android:layout_toLeftOf="@id/btnAdd2"/>
+
+                            <ImageView
+                                android:id="@+id/btnAdd2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_carrito_blanco"
+                                android:background="@drawable/mibtn2"
+                                android:textColor="@android:color/white"
+                                android:layout_below="@id/separador2"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorGris"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5pt">
+
+                        <ImageView
+                            android:id="@+id/imgPostres3"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/img_pastelcaramelo" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/imgPostres3"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5pt">
+
+                            <TextView
+                                android:id="@+id/tituloPostres3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pastel de leche con caramelo"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/postresDesc3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3pt"
+                                android:textSize="11sp"
+                                android:paddingBottom="5pt"
+                                android:layout_below="@+id/tituloPostres3"
+                                android:text="Pastel de leche con caramelo." />
+
+                            <View
+                                android:id="@+id/separador3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorCafePrincipal"
+                                android:layout_below="@+id/postresDesc3"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelCantidad3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cantidad:"
+                                android:textSize="15sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/separador3"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                            <EditText
+                                android:id="@+id/postresCant3"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textAlignment="textEnd"
+                                android:textSize="15sp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_below="@id/separador3"
+                                android:layout_toRightOf="@id/labelCantidad3"
+                                />
+
+                            <TextView
+                                android:id="@+id/postresPrecio3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$2.50"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador3"
+                                android:layout_toLeftOf="@id/btnAdd3"/>
+
+                            <ImageView
+                                android:id="@+id/btnAdd3"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_carrito_blanco"
+                                android:background="@drawable/mibtn2"
+                                android:textColor="@android:color/white"
+                                android:layout_below="@id/separador3"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorGris"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5pt">
+
+                        <ImageView
+                            android:id="@+id/imgPostres4"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/img_sorbete" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/imgPostres4"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5pt">
+
+                            <TextView
+                                android:id="@+id/tituloPostres4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sorbete de chocolate con fresa"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/postresDesc4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3pt"
+                                android:textSize="11sp"
+                                android:paddingBottom="5pt"
+                                android:layout_below="@+id/tituloPostres4"
+                                android:text="Sorbete de chocolate con fresa." />
+
+                            <View
+                                android:id="@+id/separador4"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorCafePrincipal"
+                                android:layout_below="@+id/postresDesc4"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelCantidad4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cantidad:"
+                                android:textSize="15sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/separador4"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                            <EditText
+                                android:id="@+id/postresCant4"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textAlignment="textEnd"
+                                android:textSize="15sp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_below="@id/separador4"
+                                android:layout_toRightOf="@id/labelCantidad4"
+                                />
+
+                            <TextView
+                                android:id="@+id/postresPrecio4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$2.00"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador4"
+                                android:layout_toLeftOf="@id/btnAdd4"/>
+
+                            <ImageView
+                                android:id="@+id/btnAdd4"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_carrito_blanco"
+                                android:background="@drawable/mibtn2"
+                                android:textColor="@android:color/white"
+                                android:layout_below="@id/separador4"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorGris"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5pt">
+
+                        <ImageView
+                            android:id="@+id/imgPostres5"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/img_pastelchocolate" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/imgPostres5"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5pt">
+
+                            <TextView
+                                android:id="@+id/tituloPostres5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pastel de chocolate"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/postresDesc5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3pt"
+                                android:textSize="11sp"
+                                android:paddingBottom="5pt"
+                                android:layout_below="@+id/tituloPostres5"
+                                android:text="Pastel de chocolate." />
+
+                            <View
+                                android:id="@+id/separador5"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorCafePrincipal"
+                                android:layout_below="@+id/postresDesc5"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelCantidad5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cantidad:"
+                                android:textSize="15sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/separador5"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                            <EditText
+                                android:id="@+id/postresCant5"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textAlignment="textEnd"
+                                android:textSize="15sp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_below="@id/separador5"
+                                android:layout_toRightOf="@id/labelCantidad5"
+                                />
+
+                            <TextView
+                                android:id="@+id/postresPrecio5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$3.25"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador5"
+                                android:layout_toLeftOf="@id/btnAdd5"/>
+
+                            <ImageView
+                                android:id="@+id/btnAdd5"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_carrito_blanco"
+                                android:background="@drawable/mibtn2"
+                                android:textColor="@android:color/white"
+                                android:layout_below="@id/separador5"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
             </GridLayout>
         </LinearLayout>
     </ScrollView>

@@ -13,7 +13,7 @@
         android:id="@+id/logoMenu"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="@drawable/bg_menu">
+        android:background="@drawable/img_fondo">
 
         <TextView
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/desayuno" />
+                            android:src="@drawable/img_huevoestrellado" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                                 android:id="@+id/tituloDesayuno1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="TITULO 1"
+                                android:text="Frijoles con huevo estrellado"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -92,7 +92,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/tituloDesayuno1"
-                                android:text="Lorem Ipsum is simply dummy text of industry." />
+                                android:text=" Frijoles fritos con huevo estrellado." />
 
                             <View
                                 android:id="@+id/separador1"
@@ -132,7 +132,7 @@
                                 android:id="@+id/desayunoPrecio1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$2.00"
+                                android:text="$1.50"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
@@ -155,6 +155,463 @@
                     </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorGris"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5pt">
+
+                        <ImageView
+                            android:id="@+id/imgDesayuno2"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/img_pancakes" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/imgDesayuno2"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5pt">
+
+                            <TextView
+                                android:id="@+id/tituloDesayuno2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pancakes"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/desayunoDesc2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3pt"
+                                android:textSize="11sp"
+                                android:paddingBottom="5pt"
+                                android:layout_below="@+id/tituloDesayuno2"
+                                android:text=" Pancakes de harina." />
+
+                            <View
+                                android:id="@+id/separador2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorCafePrincipal"
+                                android:layout_below="@+id/desayunoDesc2"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelCantidad2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cantidad:"
+                                android:textSize="15sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/separador2"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                            <EditText
+                                android:id="@+id/almuerzoCant2"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textAlignment="textEnd"
+                                android:textSize="15sp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_below="@id/separador2"
+                                android:layout_toRightOf="@id/labelCantidad2"
+                                />
+
+                            <TextView
+                                android:id="@+id/desayunoPrecio2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$1.00"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador2"
+                                android:layout_toLeftOf="@id/btnAdd2"/>
+
+                            <ImageView
+                                android:id="@+id/btnAdd2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_carrito_blanco"
+                                android:background="@drawable/mibtn2"
+                                android:textColor="@android:color/white"
+                                android:layout_below="@id/separador2"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorGris"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5pt">
+
+                        <ImageView
+                            android:id="@+id/imgDesayuno3"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/img_huevoscontocino" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/imgDesayuno3"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5pt">
+
+                            <TextView
+                                android:id="@+id/tituloDesayuno3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Huevo con tocino"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/desayunoDesc3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3pt"
+                                android:textSize="11sp"
+                                android:paddingBottom="5pt"
+                                android:layout_below="@+id/tituloDesayuno3"
+                                android:text=" Huevo con tocino." />
+
+                            <View
+                                android:id="@+id/separador3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorCafePrincipal"
+                                android:layout_below="@+id/desayunoDesc3"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelCantidad3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cantidad:"
+                                android:textSize="15sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/separador3"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                            <EditText
+                                android:id="@+id/almuerzoCant3"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textAlignment="textEnd"
+                                android:textSize="15sp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_below="@id/separador3"
+                                android:layout_toRightOf="@id/labelCantidad3"
+                                />
+
+                            <TextView
+                                android:id="@+id/desayunoPrecio3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$2.50"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador3"
+                                android:layout_toLeftOf="@id/btnAdd3"/>
+
+                            <ImageView
+                                android:id="@+id/btnAdd3"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_carrito_blanco"
+                                android:background="@drawable/mibtn2"
+                                android:textColor="@android:color/white"
+                                android:layout_below="@id/separador3"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorGris"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5pt">
+
+                        <ImageView
+                            android:id="@+id/imgDesayuno4"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/img_frijoles" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/imgDesayuno4"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5pt">
+
+                            <TextView
+                                android:id="@+id/tituloDesayuno4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Frijoles con huevo picado"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/desayunoDesc4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3pt"
+                                android:textSize="11sp"
+                                android:paddingBottom="5pt"
+                                android:layout_below="@+id/tituloDesayuno4"
+                                android:text=" Frijoles fritos con huevo picado." />
+
+                            <View
+                                android:id="@+id/separador4"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorCafePrincipal"
+                                android:layout_below="@+id/desayunoDesc4"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelCantidad4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cantidad:"
+                                android:textSize="15sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/separador4"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                            <EditText
+                                android:id="@+id/almuerzoCant4"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textAlignment="textEnd"
+                                android:textSize="15sp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_below="@id/separador4"
+                                android:layout_toRightOf="@id/labelCantidad4"
+                                />
+
+                            <TextView
+                                android:id="@+id/desayunoPrecio4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$1.50"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador4"
+                                android:layout_toLeftOf="@id/btnAdd4"/>
+
+                            <ImageView
+                                android:id="@+id/btnAdd4"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_carrito_blanco"
+                                android:background="@drawable/mibtn2"
+                                android:textColor="@android:color/white"
+                                android:layout_below="@id/separador4"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorGris"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5pt">
+
+                        <ImageView
+                            android:id="@+id/imgDesayuno5"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/img_pancakesjalea" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/imgDesayuno5"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5pt">
+
+                            <TextView
+                                android:id="@+id/tituloDesayuno5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pancakes con jalea"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/desayunoDesc5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3pt"
+                                android:textSize="11sp"
+                                android:paddingBottom="5pt"
+                                android:layout_below="@+id/tituloDesayuno5"
+                                android:text=" Pancakes de harina con jalea." />
+
+                            <View
+                                android:id="@+id/separador5"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorCafePrincipal"
+                                android:layout_below="@+id/desayunoDesc5"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelCantidad5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cantidad:"
+                                android:textSize="15sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/separador5"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                            <EditText
+                                android:id="@+id/almuerzoCant5"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textAlignment="textEnd"
+                                android:textSize="15sp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_below="@id/separador5"
+                                android:layout_toRightOf="@id/labelCantidad5"
+                                />
+
+                            <TextView
+                                android:id="@+id/desayunoPrecio5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$2.00"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador5"
+                                android:layout_toLeftOf="@id/btnAdd5"/>
+
+                            <ImageView
+                                android:id="@+id/btnAdd5"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_carrito_blanco"
+                                android:background="@drawable/mibtn2"
+                                android:textColor="@android:color/white"
+                                android:layout_below="@id/separador5"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
             </GridLayout>
         </LinearLayout>
     </ScrollView>
