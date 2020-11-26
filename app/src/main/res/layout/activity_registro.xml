@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@color/colorRosa"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/labelTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:textStyle="bold"
+        android:textColor="@color/colorCafePrincipal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/editCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/txtContraRegistrar1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/input"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:padding="15sp" />
+
+    <EditText
+        android:id="@+id/txtContraRegistrar1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Contraseña"
+        android:padding="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="textPassword"
+        android:layout_above="@+id/txtContraRegistrar2"
+        android:background="@drawable/input"/>
+
+    <EditText
+        android:id="@+id/txtContraRegistrar2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Confirmar contraseña"
+        android:padding="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="textPassword"
+        android:layout_above="@+id/btnRegistrar"
+        android:background="@drawable/input"/>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="REGISTRAR"
+        android:textColor="@android:color/white"
+        android:background="@drawable/mibtn3"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/iso_logo_dark"
+        android:paddingHorizontal="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/editCorreo"
+        android:layout_below="@id/labelTitulo"/>
+
+</RelativeLayout>

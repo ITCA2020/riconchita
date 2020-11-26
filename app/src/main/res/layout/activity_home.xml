@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <!--CREACION DE TEXTO TITULO-->
     <LinearLayout
         android:id="@+id/logoMenu"
@@ -20,7 +21,18 @@
             android:layout_marginBottom="50dp"
             android:layout_marginTop="50dp"
             android:src="@drawable/logo_rinconchita"/>
+
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnMenu"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/icon_menu"
+        />
 
     <TextView
         android:id="@+id/textGrid"
@@ -44,7 +56,8 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/textGrid"
         android:columnCount="2"
-        android:padding="40dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="40dp"
         android:background="@android:color/white"
         android:rowCount="3">
 
@@ -75,8 +88,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginBottom="5dp"
                     android:src="@drawable/icon_desayunos" />
 
@@ -117,8 +130,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginBottom="5dp"
                     android:src="@drawable/icon_almuerzo" />
 
@@ -159,8 +172,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginBottom="5dp"
                     android:src="@drawable/icon_aperitivos" />
 
@@ -200,8 +213,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginBottom="5dp"
                     android:src="@drawable/icon_postres" />
 
@@ -242,8 +255,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginBottom="5dp"
                     android:src="@drawable/icon_bebidas" />
 
@@ -283,7 +296,7 @@
 
                 <ImageView
                     android:layout_width="50dp"
-                    android:layout_height="60dp"
+                    android:layout_height="40dp"
                     android:layout_marginBottom="5dp"
                     android:src="@drawable/icon_carrito" />
 

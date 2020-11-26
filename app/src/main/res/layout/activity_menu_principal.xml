@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipal">
+
+    <TextView
+        android:id="@+id/encabezadoMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingVertical="40dp"
+        android:paddingHorizontal="40dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@color/colorCafePrincipal"
+        android:textColor="@color/colorGris"
+        android:layout_alignParentTop="true"
+        android:text="Rinconchita" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/encabezadoMenu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txtPrincipal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Principal"
+                android:layout_alignParentTop="true"
+                />
+
+            <ImageView
+                android:id="@+id/iconHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txtPrincipal"/>
+
+            <TextView
+                android:id="@+id/btnHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="22dp"
+                android:text="Inicio"
+                android:layout_toRightOf="@id/iconHome"
+                android:layout_below="@id/txtPrincipal"
+                />
+
+            <ImageView
+                android:id="@+id/iconCarrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_carrito"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iconHome"/>
+
+            <TextView
+                android:id="@+id/btnCarrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Carrito de compras"
+                android:layout_toRightOf="@id/iconCarrito"
+                android:layout_below="@id/iconHome"
+                />
+
+            <ImageView
+                android:id="@+id/iconHistorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_historial"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iconCarrito"/>
+
+            <TextView
+                android:id="@+id/btnHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Historial"
+                android:layout_toRightOf="@id/iconHistorial"
+                android:layout_below="@id/iconCarrito"
+                />
+
+            <View
+                android:id="@+id/separador2"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/iconHistorial"
+                />
+
+            <TextView
+                android:id="@+id/txtCategorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Categorias"
+                android:layout_below="@id/separador2"
+                />
+
+            <ImageView
+                android:id="@+id/iconDesayuno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comida"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txtCategorias"/>
+
+            <TextView
+                android:id="@+id/btnDesayunos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Desayuno"
+                android:layout_toRightOf="@id/iconDesayuno"
+                android:layout_below="@id/txtCategorias"
+                />
+
+            <ImageView
+                android:id="@+id/iconAlmuerzo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comida"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iconDesayuno"/>
+
+            <TextView
+                android:id="@+id/btnAlmuerzos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Almuerzos"
+                android:layout_toRightOf="@id/iconAlmuerzo"
+                android:layout_below="@id/iconDesayuno"
+                />
+
+            <ImageView
+                android:id="@+id/iconAperitivos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_aperitivo"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iconAlmuerzo"/>
+
+            <TextView
+                android:id="@+id/btnAperitivos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Aperitivos"
+                android:layout_toRightOf="@id/iconAperitivos"
+                android:layout_below="@id/iconAlmuerzo"
+                />
+
+            <ImageView
+                android:id="@+id/iconBebidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bebida"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iconAperitivos"/>
+
+            <TextView
+                android:id="@+id/btnBebidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Bebidas"
+                android:layout_toRightOf="@id/iconBebidas"
+                android:layout_below="@id/iconAperitivos"
+                />
+
+            <ImageView
+                android:id="@+id/iconPostres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_postre"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iconBebidas"/>
+
+            <TextView
+                android:id="@+id/btnPostres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Postres"
+                android:layout_toRightOf="@id/iconPostres"
+                android:layout_below="@id/iconBebidas"
+                />
+
+            <View
+                android:id="@+id/separador3"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/iconPostres"
+                />
+
+            <ImageView
+                android:id="@+id/iconCerrarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_postre"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/separador3"/>
+
+            <TextView
+                android:id="@+id/btnCerraSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Cerrar sesión"
+                android:layout_toRightOf="@id/iconCerrarSesion"
+                android:layout_below="@id/separador3"
+                />
+
+            <ImageView
+                android:id="@+id/iconSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_postre"
+                android:padding="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iconCerrarSesion"/>
+
+            <TextView
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingVertical="20dp"
+                android:text="Salir"
+                android:layout_toRightOf="@id/iconSalir"
+                android:layout_below="@id/iconCerrarSesion"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
