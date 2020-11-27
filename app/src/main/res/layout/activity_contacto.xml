@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="CONTACTOS"
+        android:text="@string/contactos"
         android:textColor="@android:color/white"
         android:textSize="30sp" />
 
@@ -57,12 +57,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/whatsapp" />
+                    android:src="@drawable/whatsapp"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Whatsapp"
+                    android:text="@string/whatsapp"
                     android:textAlignment="center"
                     android:textColor="#090606"
                     android:textStyle="bold" />
@@ -95,12 +96,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/telefono" />
+                    android:src="@drawable/telefono"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Telefono"
+                    android:text="@string/telefono"
                     android:textAlignment="center"
                     android:textColor="#090606"
                     android:textStyle="bold" />

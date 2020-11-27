@@ -22,7 +22,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/todo" />
 
 
 
@@ -49,7 +50,7 @@
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:text="CARRITO" />
+                android:text="@string/carrito" />
 
         </TableRow>
 
@@ -67,7 +68,7 @@
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:text="Cantidad" />
+                android:text="@string/cantida" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -79,7 +80,7 @@
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:text="Producto" />
+                android:text="@string/producto" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -91,7 +92,7 @@
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:text="Costo" />
+                android:text="@string/costo" />
         </TableRow>
 
     </TableLayout>
@@ -100,7 +101,7 @@
         android:id="@+id/btnRealizarPedido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Realizar Pedido"
+        android:text="@string/realizar_pedido"
         android:layout_marginTop="20dp"
         android:textColor="@android:color/white"
         android:background="@drawable/mibtn3"

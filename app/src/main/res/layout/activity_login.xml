@@ -30,9 +30,10 @@
         android:layout_marginBottom="275dp"
         android:background="@drawable/input"
         android:ems="10"
-        android:hint="Correo"
+        android:hint="@string/correo"
         android:inputType="textEmailAddress"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:importantForAutofill="no" />
 
 
     <EditText
@@ -45,17 +46,18 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/input"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/contrase_a"
         android:inputType="textPassword"
         android:padding="15dp"
-        android:password="false" />
+        android:password="false"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/mibtn1"
-        android:text="Inicio de sesion"
+        android:text="@string/inicio_de_sesion"
         android:textColor="@android:color/white"
         android:layout_above="@id/txtRegistrar"
         android:layout_alignParentStart="true"
@@ -67,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="¿No tienes cuenta? Registrate"
+        android:text="@string/no_tienes_cuenta_registrate"
         android:textColor="@color/colorNaranja"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"

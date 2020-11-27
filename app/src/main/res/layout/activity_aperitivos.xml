@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="APERITIVOS"
+            android:text="@string/aperitivos"
             android:layout_centerVertical="true"
             android:textStyle="bold"
             android:padding="10dp"
@@ -66,12 +66,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_alitas" />
+                            android:src="@drawable/img_alitas"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgaperitivo1"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -80,7 +81,7 @@
                                 android:id="@+id/tituloAperitivo1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Alitas de pollo frito"
+                                android:text="@string/alitas_de_pollo_frito"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -92,7 +93,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/tituloAperitivo1"
-                                android:text="Alitas de pollo frito 8 porciones" />
+                                android:text="@string/alitas_de_pollo_frito_8_porciones" />
 
                             <View
                                 android:id="@+id/separador1"
@@ -108,11 +109,11 @@
                                 android:id="@+id/labelCantidad1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador1"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -120,48 +121,49 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador1"
-                                android:layout_toRightOf="@id/labelCantidad1"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad1"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:id="@+id/aperitivoPrecio1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="6.50"
+                                android:text="@string/_6_50"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador1"
-                                android:layout_toLeftOf="@id/btnAdd1"/>
+                                android:layout_toStartOf="@id/btnAdd1"/>
 
                             <TextView
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador1"
-                                android:layout_toLeftOf="@id/aperitivoPrecio1"/>
+                                android:layout_toStartOf="@id/aperitivoPrecio1"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd1"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador1"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
 
@@ -190,12 +192,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_emparedado" />
+                            android:src="@drawable/img_emparedado"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgaperitivo2"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -204,7 +207,7 @@
                                 android:id="@+id/tituloAperitivo2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Emparedado de jamon"
+                                android:text="@string/emparedado_de_jamon"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -216,7 +219,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/tituloAperitivo2"
-                                android:text="Emparedaro de Jamon" />
+                                android:text="@string/emparedaro_de_jamon" />
 
                             <View
                                 android:id="@+id/separador2"
@@ -232,11 +235,11 @@
                                 android:id="@+id/labelCantidad2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador2"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -244,48 +247,49 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador2"
-                                android:layout_toRightOf="@id/labelCantidad2"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad2"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:id="@+id/aperitivoPrecio2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="2.50"
+                                android:text="@string/_2_50"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador2"
-                                android:layout_toLeftOf="@id/btnAdd2"/>
+                                android:layout_toStartOf="@id/btnAdd2"/>
 
                             <TextView
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador2"
-                                android:layout_toLeftOf="@id/aperitivoPrecio2"/>
+                                android:layout_toStartOf="@id/aperitivoPrecio2"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd2"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador2"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
 
@@ -314,12 +318,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_hamburguesaqueso" />
+                            android:src="@drawable/img_hamburguesaqueso"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgaperitivo3"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -328,7 +333,7 @@
                                 android:id="@+id/tituloAperitivo3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Hamburguesa doble queso"
+                                android:text="@string/hamburguesa_doble_queso"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -340,7 +345,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/tituloAperitivo3"
-                                android:text="Hamburguesa doble queso" />
+                                android:text="@string/hamburguesa_doble_queso" />
 
                             <View
                                 android:id="@+id/separador3"
@@ -356,11 +361,11 @@
                                 android:id="@+id/labelCantidad3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador3"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -368,48 +373,49 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador3"
-                                android:layout_toRightOf="@id/labelCantidad3"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad3"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:id="@+id/aperitivoPrecio3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="2.00"
+                                android:text="@string/_2_00"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador3"
-                                android:layout_toLeftOf="@id/btnAdd3"/>
+                                android:layout_toStartOf="@id/btnAdd3"/>
 
                             <TextView
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador3"
-                                android:layout_toLeftOf="@id/aperitivoPrecio3"/>
+                                android:layout_toStartOf="@id/aperitivoPrecio3"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd3"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador3"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
 
@@ -438,12 +444,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_hotdog" />
+                            android:src="@drawable/img_hotdog"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgaperitivo4"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -452,7 +459,7 @@
                                 android:id="@+id/tituloAperitivo4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Hot Dog con papas fritas"
+                                android:text="@string/hot_dog_con_papas_fritas"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -464,7 +471,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/tituloAperitivo4"
-                                android:text="Hot Dog con papas fritas" />
+                                android:text="@string/hot_dog_con_papas_fritas" />
 
                             <View
                                 android:id="@+id/separador4"
@@ -480,11 +487,11 @@
                                 android:id="@+id/labelCantidad4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador4"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -492,48 +499,49 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador4"
-                                android:layout_toRightOf="@id/labelCantidad4"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad4"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:id="@+id/aperitivoPrecio4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="1.50"
+                                android:text="@string/_1_50"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador4"
-                                android:layout_toLeftOf="@id/btnAdd4"/>
+                                android:layout_toStartOf="@id/btnAdd4"/>
 
                             <TextView
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador4"
-                                android:layout_toLeftOf="@id/aperitivoPrecio4"/>
+                                android:layout_toStartOf="@id/aperitivoPrecio4"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd4"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador4"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
 
@@ -562,12 +570,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_tacos" />
+                            android:src="@drawable/img_tacos"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgaperitivo5"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -576,7 +585,7 @@
                                 android:id="@+id/tituloAperitivo5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Tacos de carne"
+                                android:text="@string/tacos_de_carne"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -588,7 +597,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/tituloAperitivo5"
-                                android:text="Tacos de carne 2 porciones" />
+                                android:text="@string/tacos_de_carne_2_porciones" />
 
                             <View
                                 android:id="@+id/separador5"
@@ -604,11 +613,11 @@
                                 android:id="@+id/labelCantidad5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador5"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -616,48 +625,49 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador5"
-                                android:layout_toRightOf="@id/labelCantidad5"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad5"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:id="@+id/aperitivoPrecio5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="3.50"
+                                android:text="@string/_3_50"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador5"
-                                android:layout_toLeftOf="@id/btnAdd5"/>
+                                android:layout_toStartOf="@id/btnAdd5"/>
 
                             <TextView
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador5"
-                                android:layout_toLeftOf="@id/aperitivoPrecio5"/>
+                                android:layout_toStartOf="@id/aperitivoPrecio5"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd5"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador5"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
 

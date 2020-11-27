@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ALMUERZOS"
+            android:text="@string/almuerzos"
             android:layout_centerVertical="true"
             android:textStyle="bold"
             android:padding="10dp"
@@ -31,12 +31,12 @@
     <ImageView
         android:id="@+id/btnMenu"
         android:layout_marginTop="50px"
-        android:layout_marginRight="50px"
+        android:layout_marginEnd="50px"
         android:layout_width="80px"
         android:layout_height="80px"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         app:srcCompat="@drawable/icon_menu2"
-        />
+        android:contentDescription="@string/todo" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -79,12 +79,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_pollofrito" />
+                            android:src="@drawable/img_pollofrito"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgalmuerzo1"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -93,7 +94,7 @@
                                 android:id="@+id/almuerzoTitulo1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Pollo frito con arroz"
+                                android:text="@string/pollo_frito_con_arroz"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -105,7 +106,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/almuerzoTitulo1"
-                                android:text="`Pollo frito, porcion de arroz y 2 tortillas " />
+                                android:text="@string/pollo_frito_porcion_de_arroz_y_2_tortillas" />
 
                             <View
                                 android:id="@+id/separador1"
@@ -121,11 +122,11 @@
                                 android:id="@+id/labelCantidad1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador1"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -133,47 +134,48 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador1"
-                                android:layout_toRightOf="@id/labelCantidad1"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad1"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/s"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador1"
-                                android:layout_toLeftOf="@id/almuerzoPrecio1"/>
+                                android:layout_toStartOf="@id/almuerzoPrecio1"/>
 
                             <TextView
                                 android:id="@+id/almuerzoPrecio1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="2.00"
+                                android:text="@string/_2_00"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador1"
-                                android:layout_toLeftOf="@id/btnAdd1"/>
+                                android:layout_toStartOf="@id/btnAdd1"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd1"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador1"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -201,12 +203,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_arroz" />
+                            android:src="@drawable/img_arroz"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgalmuerzo2"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -215,7 +218,7 @@
                                 android:id="@+id/almuerzoTitulo2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Arroz con verduras y huevo"
+                                android:text="@string/arroz_con_verduras_y_huevo"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -227,7 +230,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/almuerzoTitulo2"
-                                android:text="Porcion de arroz con verduras, huevo y 2 tortillas " />
+                                android:text="@string/porcion_de_arroz_con_verduras_huevo_y_2_tortillas" />
 
                             <View
                                 android:id="@+id/separador2"
@@ -243,11 +246,11 @@
                                 android:id="@+id/labelCantidad2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador2"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -255,47 +258,48 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador2"
-                                android:layout_toRightOf="@id/labelCantidad2"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad2"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador2"
-                                android:layout_toLeftOf="@id/almuerzoPrecio2"/>
+                                android:layout_toStartOf="@id/almuerzoPrecio2"/>
 
                             <TextView
                                 android:id="@+id/almuerzoPrecio2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="1.75"
+                                android:text="@string/_1_75"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador2"
-                                android:layout_toLeftOf="@id/btnAdd2"/>
+                                android:layout_toStartOf="@id/btnAdd2"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd2"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador2"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -323,12 +327,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_hamburgueza" />
+                            android:src="@drawable/img_hamburgueza"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgalmuerzo3"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -337,7 +342,7 @@
                                 android:id="@+id/almuerzoTitulo3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Hamburguesa doble carne"
+                                android:text="@string/hamburguesa_doble_carne"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -349,7 +354,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/almuerzoTitulo3"
-                                android:text="`Hamburguesa soble carne  " />
+                                android:text="@string/hamburguesa_soble_carne" />
 
                             <View
                                 android:id="@+id/separador3"
@@ -365,11 +370,11 @@
                                 android:id="@+id/labelCantidad3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador3"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -377,48 +382,49 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador3"
-                                android:layout_toRightOf="@id/labelCantidad3"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad3"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:id="@+id/almuerzoPrecio3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="2.25"
+                                android:text="@string/_2_25"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador3"
-                                android:layout_toLeftOf="@id/btnAdd3"/>
+                                android:layout_toStartOf="@id/btnAdd3"/>
 
                             <TextView
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador3"
-                                android:layout_toLeftOf="@id/almuerzoPrecio3"/>
+                                android:layout_toStartOf="@id/almuerzoPrecio3"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd3"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador3"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -446,12 +452,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_lonjapescado" />
+                            android:src="@drawable/img_lonjapescado"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgalmuerzo4"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -460,7 +467,7 @@
                                 android:id="@+id/almuerzoTitulo4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Lonja de pescado con verdura"
+                                android:text="@string/lonja_de_pescado_con_verdura"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -472,7 +479,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/almuerzoTitulo4"
-                                android:text="`Lonja de pescado con verdura y arroz " />
+                                android:text="@string/lonja_de_pescado_con_verdura_y_arroz" />
 
                             <View
                                 android:id="@+id/separador4"
@@ -488,11 +495,11 @@
                                 android:id="@+id/labelCantidad4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador4"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -500,48 +507,49 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador4"
-                                android:layout_toRightOf="@id/labelCantidad4"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad4"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:id="@+id/almuerzoPrecio4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="2.50"
+                                android:text="@string/_2_50"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador4"
-                                android:layout_toLeftOf="@id/btnAdd4"/>
+                                android:layout_toStartOf="@id/btnAdd4"/>
 
                             <TextView
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador4"
-                                android:layout_toLeftOf="@id/almuerzoPrecio4"/>
+                                android:layout_toStartOf="@id/almuerzoPrecio4"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd4"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador4"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -569,12 +577,13 @@
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/img_pizza" />
+                            android:src="@drawable/img_pizza"
+                            android:contentDescription="@string/todo" />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_below="@id/imgalmuerzo5"
                             android:orientation="vertical"
                             android:paddingHorizontal="5pt">
@@ -583,7 +592,7 @@
                                 android:id="@+id/almuerzoTitulo5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Pizza con aceitunas negras"
+                                android:text="@string/pizza_con_aceitunas_negras"
                                 android:textSize="20sp"
                                 android:textStyle="bold"/>
 
@@ -595,7 +604,7 @@
                                 android:textSize="11sp"
                                 android:paddingBottom="5pt"
                                 android:layout_below="@+id/almuerzoTitulo5"
-                                android:text="Pizza con aceitunas negras 8 porciones" />
+                                android:text="@string/pizza_con_aceitunas_negras_8_porciones" />
 
                             <View
                                 android:id="@+id/separador5"
@@ -611,11 +620,11 @@
                                 android:id="@+id/labelCantidad5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Cantidad:"
+                                android:text="@string/cantidad"
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_below="@id/separador5"
-                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
                                 />
 
                             <EditText
@@ -623,48 +632,49 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
-                                android:hint="0"
+                                android:hint="@string/_0"
                                 android:textAlignment="textEnd"
                                 android:textSize="15sp"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_below="@id/separador5"
-                                android:layout_toRightOf="@id/labelCantidad5"
-                                />
+                                android:layout_toEndOf="@id/labelCantidad5"
+                                android:importantForAutofill="no" />
 
                             <TextView
                                 android:id="@+id/almuerzoPrecio5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="8.00"
+                                android:text="@string/_8_00"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador5"
-                                android:layout_toLeftOf="@id/btnAdd5"/>
+                                android:layout_toStartOf="@id/btnAdd5"/>
 
                             <TextView
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$"
+                                android:text="@string/$"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador5"
-                                android:layout_toLeftOf="@id/almuerzoPrecio5"/>
+                                android:layout_toStartOf="@id/almuerzoPrecio5"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd5"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
                                 android:padding="5dp"
                                 android:src="@drawable/icon_carrito_blanco"
                                 android:background="@drawable/mibtn2"
                                 android:textColor="@android:color/white"
                                 android:layout_below="@id/separador5"
-                                android:layout_alignParentRight="true"/>
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/todo" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
