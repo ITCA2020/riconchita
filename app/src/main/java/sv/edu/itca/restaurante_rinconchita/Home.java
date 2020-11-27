@@ -26,6 +26,7 @@ public class Home extends AppCompatActivity {
         btnPostres = findViewById(R.id.btnPostres);
         btnMenu = findViewById(R.id.btnMenu);
 
+
         btnAlmuerzos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

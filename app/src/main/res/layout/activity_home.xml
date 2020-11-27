@@ -20,18 +20,19 @@
             android:layout_height="150dp"
             android:layout_marginBottom="50dp"
             android:layout_marginTop="50dp"
-            android:src="@drawable/logo_rinconchita"/>
+            android:src="@drawable/logo_rinconchita"
+            />
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/btnMenu"
-        android:layout_marginTop="30px"
-        android:layout_marginRight="30px"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="50px"
         android:layout_width="80px"
         android:layout_height="80px"
         android:layout_alignParentRight="true"
-        app:srcCompat="@drawable/icon_menu"
+        app:srcCompat="@drawable/icon_menu2"
         />
 
     <TextView
@@ -46,7 +47,9 @@
         android:padding="10dp"
         android:background="@color/colorCafePrincipal"
         android:textColor="@android:color/white"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        />
+
     <!--FINAL DEL TITULO-->
     <!--_____________________________________________________________________________________________________________________-->
 
@@ -101,6 +104,7 @@
                     android:textColor="#090606"
                     android:textStyle="bold" />
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
         <!--FINAL DE LA OPCION DESAYUNOS-->
         <!--_____________________________________________________________________________________________________________________-->

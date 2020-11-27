@@ -32,6 +32,7 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 Intent objIntento = new Intent(MenuPrincipal.this, Home.class);
                 startActivity(objIntento);
+                finish();
             }
         });
         btnAlmuerzos.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +40,7 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 Intent objIntento = new Intent(MenuPrincipal.this, Almuerzos.class);
                 startActivity(objIntento);
+                finish();
             }
         });
         btnAperitivos.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +48,7 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 Intent objIntento = new Intent(MenuPrincipal.this, Aperitivos.class);
                 startActivity(objIntento);
+                finish();
             }
         });
         btnBebidas.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +56,7 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 Intent objIntento = new Intent(MenuPrincipal.this, Bebidas.class);
                 startActivity(objIntento);
+                finish();
             }
         });
         btnCarrito.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +64,7 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 Intent objIntento = new Intent(MenuPrincipal.this, Carrito.class);
                 startActivity(objIntento);
+                finish();
             }
         });
         btnDesayunos.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +72,7 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 Intent objIntento = new Intent(MenuPrincipal.this, Desayunos.class);
                 startActivity(objIntento);
+                finish();
             }
         });
         btnPostres.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +80,7 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 Intent objIntento = new Intent(MenuPrincipal.this, Postres.class);
                 startActivity(objIntento);
+                finish();
             }
         });
         btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
