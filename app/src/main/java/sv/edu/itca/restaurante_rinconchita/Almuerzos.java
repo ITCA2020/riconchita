@@ -70,6 +70,57 @@ public class Almuerzos extends AppCompatActivity {
                 AgregarCarrito();
             }
         });
+
+        btnAddCarrito3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nombre = findViewById(R.id.almuerzoTitulo3);
+                cantidad = findViewById(R.id.almuerzoCant3);
+                precio = findViewById(R.id.almuerzoPrecio3);
+                if (cantidad.getText().toString().isEmpty()){
+                    MostrarMensaje("Debe especificar cantidad");
+                } else {
+                    costo = Float.parseFloat(cantidad.getText().toString())*Float.parseFloat(precio.getText().toString());
+                }
+
+                AgregarCarrito();
+            }
+        });
+
+        btnAddCarrito4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nombre = findViewById(R.id.almuerzoTitulo4);
+                cantidad = findViewById(R.id.almuerzoCant4);
+                precio = findViewById(R.id.almuerzoPrecio4);
+                if (cantidad.getText().toString().isEmpty()){
+                    MostrarMensaje("Debe especificar cantidad");
+                } else {
+                    costo = Float.parseFloat(cantidad.getText().toString())*Float.parseFloat(precio.getText().toString());
+                }
+
+                AgregarCarrito();
+            }
+        });
+
+        btnAddCarrito5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nombre = findViewById(R.id.almuerzoTitulo5);
+                cantidad = findViewById(R.id.almuerzoCant5);
+                precio = findViewById(R.id.almuerzoPrecio5);
+                if (cantidad.getText().toString().isEmpty()){
+                    MostrarMensaje("Debe especificar cantidad");
+                } else {
+                    costo = Float.parseFloat(cantidad.getText().toString())*Float.parseFloat(precio.getText().toString());
+                }
+
+                AgregarCarrito();
+            }
+        });
+
+
+
     }
 
 

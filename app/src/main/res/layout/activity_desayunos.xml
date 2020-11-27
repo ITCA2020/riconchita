@@ -116,7 +116,7 @@
                                 />
 
                             <EditText
-                                android:id="@+id/almuerzoCant"
+                                android:id="@+id/desayunoCant"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
@@ -240,7 +240,7 @@
                                 />
 
                             <EditText
-                                android:id="@+id/almuerzoCant2"
+                                android:id="@+id/desayunoCant2"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
@@ -364,7 +364,7 @@
                                 />
 
                             <EditText
-                                android:id="@+id/almuerzoCant3"
+                                android:id="@+id/desayunoCant3"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
@@ -488,7 +488,7 @@
                                 />
 
                             <EditText
-                                android:id="@+id/almuerzoCant4"
+                                android:id="@+id/desayunoCant4"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
@@ -612,7 +612,7 @@
                                 />
 
                             <EditText
-                                android:id="@+id/almuerzoCant5"
+                                android:id="@+id/desayunoCant5"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"

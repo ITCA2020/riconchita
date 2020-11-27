@@ -389,12 +389,23 @@
                                 android:id="@+id/almuerzoPrecio3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$2.25"
+                                android:text="2.25"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador3"
                                 android:layout_toLeftOf="@id/btnAdd3"/>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador3"
+                                android:layout_toLeftOf="@id/almuerzoPrecio3"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd3"
@@ -501,12 +512,23 @@
                                 android:id="@+id/almuerzoPrecio4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$2.50"
+                                android:text="2.50"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador4"
                                 android:layout_toLeftOf="@id/btnAdd4"/>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador4"
+                                android:layout_toLeftOf="@id/almuerzoPrecio4"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd4"
@@ -613,12 +635,23 @@
                                 android:id="@+id/almuerzoPrecio5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$8.00"
+                                android:text="8.00"
                                 android:textSize="25sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:layout_below="@id/separador5"
                                 android:layout_toLeftOf="@id/btnAdd5"/>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_below="@id/separador5"
+                                android:layout_toLeftOf="@id/almuerzoPrecio5"/>
 
                             <ImageView
                                 android:id="@+id/btnAdd5"
