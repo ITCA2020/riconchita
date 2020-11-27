@@ -91,6 +91,14 @@ public class MenuPrincipal extends AppCompatActivity {
                 finish();
             }
         });
+        btnHistorial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent objIntento = new Intent(MenuPrincipal.this, Contactos.class);
+                startActivity(objIntento);
+                finish();
+            }
+        });
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

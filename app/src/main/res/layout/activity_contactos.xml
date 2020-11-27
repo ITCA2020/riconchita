@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
+    android:padding="40dp"
+    android:background="@color/colorRosa"
     tools:context=".MainActivity">
 
     <!--CREACION DE TEXTO TITULO-->
@@ -14,7 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/contactos"
-        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_above="@id/contactosItem"
+        android:textColor="@color/colorCafePrincipal"
         android:textSize="30sp" />
 
     <!--FINAL DEL TITULO-->
@@ -22,10 +25,12 @@
 
     <!--CREACION DE GRID LAYOUT-->
     <GridLayout
+        android:id="@+id/contactosItem"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_below="@+id/textGrid"
-        android:layout_marginTop="258dp"
+        android:layout_marginVertical="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:columnCount="2"
         android:rowCount="3">
 
@@ -35,6 +40,7 @@
 
         <!--CREACION DE LA OPCION WHATSAPP-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/wsp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -75,6 +81,7 @@
 
         <!--CREACION DE LA OPCION TELEFONO-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/tel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
