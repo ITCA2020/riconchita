@@ -32,7 +32,8 @@
         android:layout_height="wrap_content"
         android:background="@color/colorGris"
         android:layout_below="@id/iconCarrito"
-        android:layout_above="@id/btnRealizarPedido">
+        android:layout_above="@id/btnRealizarPedido"
+        android:stretchColumns="*">
 
         <TableRow
             android:layout_width="match_parent"
